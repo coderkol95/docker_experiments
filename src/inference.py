@@ -1,5 +1,6 @@
 import pickle
 from src.data import featureAddition # This import is necessary for the pickle load featureAddition()
+# The extra src. is because it is called by app.py
 
 with open ("assets/data_pipe.pkl",'rb') as f:
     data_pipe=pickle.load(f)
