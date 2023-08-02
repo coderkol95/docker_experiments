@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="inp1">Input 1: </label>
+        <input id="inp1" name="inp1" type="number" required>
+        <br>
+        <label for="inp2">Input 2: </label>
+        <input id="inp2" name="inp2" type="number" required>
+        <br>
+        <label for="inp3">Input 3: </label>
+        <input id="inp3" name="inp3" type="number" required>
+        <br>
+        <label for="inp4">Input 4: </label>
+        <input id="inp4" name="inp4" type="number" required>
+        <br>
+        <input type="submit">
+    </form>
+
+    {% if pred %}
+    <h3>{{ pred }}</h3>
+    {% endif %}
+</body>
+</html>
